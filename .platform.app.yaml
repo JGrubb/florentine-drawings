@@ -12,7 +12,7 @@ type: "ruby:2.3"
 # The configuration of app when it is exposed to the web.
 web:
     upstream:
-        socket_family: unix
+        socket_family: tcp
     # Commands are run once after deployment to start the application process.
     commands:
        start: "unicorn -l 127.0.0.1:$SOCKET -E production config.ru"
