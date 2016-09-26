@@ -15,7 +15,7 @@ web:
     #     socket_family: tcp
     # Commands are run once after deployment to start the application process.
     commands:
-       start: "unicorn -l 127.0.0.1:$SOCKET -E production config.ru"
+       start: "unicorn -l 0.0.0.0:$SOCKET -E production config.ru"
 
     # The folder from which to serve static assets, for this location.
     #
