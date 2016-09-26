@@ -6,4 +6,4 @@ solrsearch:
   type: solr:4.10
   disk: 1024
   configuration:
-    core_config: !archive ".platform/solr/conf"
+    core_config: !archive "solr/conf"
