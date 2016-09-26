@@ -26,6 +26,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'blacklight', "~> 6.3.1"
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
 gem 'rest-client'
+gem 'platform_sh'
 
 
 # Use ActiveModel has_secure_password

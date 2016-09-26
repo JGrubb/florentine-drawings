@@ -1,0 +1,9 @@
+mysqldb:
+  type: mysql:10.0
+  disk: 2048
+
+solrsearch:
+  type: solr:4.10
+  disk: 1024
+  configuration:
+    core_config: !archive "config/solr/conf"
