@@ -11,11 +11,12 @@ type: "ruby:2.3"
 
 # The configuration of app when it is exposed to the web.
 web:
-    # upstream:
-    #     socket_family: tcp
+    # ** This explodes when I uncomment it **
+    upstream:
+        socket_family: unix
     # Commands are run once after deployment to start the application process.
     commands:
-       start: "unicorn -l 127.0.0.1:$PORT -E production config.ru"
+       start: "unicorn -l $SOCKET -E production config.ru"
 
     # The folder from which to serve static assets, for this location.
     #
