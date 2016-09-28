@@ -5,7 +5,3 @@
 "http://www.{default}/":
     type: redirect
     to: "http://{default}/"
-
-"http://solr.{default}/":
-    type: upstream
-    upstream: "solrsearch:http"
